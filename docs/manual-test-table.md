@@ -20,7 +20,7 @@ python -m pytest
 | 3 | Missing input file | `--input data/nope.csv` | Clear message naming the file | | ☐ |
 | 4 | Threshold keeps nothing | `min_score: 999` in config | Empty table, count 0, no crash | | ☐ |
 | 5 | Excel output | `--excel output/results.xlsx` | File exists and opens in Excel | | ☐ |
-| 6 | \<your own case\> | | | | ☐ |
+| 6 | Warn-only filtering | `python -m src.main --input data/servers.csv --config config.yaml` | Only servers with `warn` status are kept | | ☐ |
 
 ## Automated tests
 
